@@ -74,6 +74,7 @@ void Model::bornAndDeath(){
             //Decreases it's pool
             ants[i].pool *= 0.5;
             Ant a(this);
+            a.pool = ants[i].pool;
             ants.push_back(a); //Add new offspring
             
             //Notification the born event to square for changing clock time
